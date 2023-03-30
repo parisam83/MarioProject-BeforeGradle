@@ -21,6 +21,6 @@ public class Frame extends JFrame {
     public void setFirstPage(){
         if (firstPage == null) firstPage = new FirstPage();
         this.setContentPane(firstPage);
-        this.pack();
+        //this.pack();
     }
 }
