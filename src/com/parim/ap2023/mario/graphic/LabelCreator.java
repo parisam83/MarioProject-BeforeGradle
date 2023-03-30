@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class LabelCreator extends JLabel {
     private static final int gameWidth = 1500, gameHeight = 832;
-    private int x = 0, y = 0;
+    private int x = 0, y = 20;
     private final Font font;
     private final String text;
 

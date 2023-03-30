@@ -5,9 +5,9 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Frame extends JFrame {
-    static FirstPage firstPage;
-    static final int width = 1500, height = 832;
-    static final Dimension screenSize = new Dimension(width, height);
+    private static FirstPage firstPage;
+    private static final int gameWidth = 1500, gameHeight = 832;
+    private static final Dimension screenSize = new Dimension(gameWidth, gameHeight);
     public Frame(){
         this.setTitle("Super Xayyati Game!");
         this.setSize(screenSize);
@@ -22,5 +22,13 @@ public class Frame extends JFrame {
         if (firstPage == null) firstPage = new FirstPage();
         this.setContentPane(firstPage);
         //this.pack();
+    }
+
+    public static int getGameWidth() {
+        return gameWidth;
+    }
+
+    public static int getGameHeight() {
+        return gameHeight;
     }
 }

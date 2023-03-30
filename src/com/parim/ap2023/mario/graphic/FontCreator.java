@@ -15,6 +15,7 @@ public class FontCreator {
             throw new RuntimeException(e);
         }
     }
-    public final static Font titleFont = font.deriveFont(50f);
+    public final static Font titleFont = font.deriveFont(70f);
+    public final static Font buttonFont = font.deriveFont(40f);
 
 }

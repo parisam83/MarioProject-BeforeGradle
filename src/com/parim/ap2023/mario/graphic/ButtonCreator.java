@@ -3,11 +3,20 @@ package com.parim.ap2023.mario.graphic;
 import javax.swing.*;
 
 public class ButtonCreator extends JButton {
-    private static final int buttonGap = 50;
-    private int buttonWidth = 150, buttonHeight = 100;
-    private final int x, y;
+    private static final int buttonGap = 180;
+    private int buttonWidth = 350, buttonHeight = 120;
+    private int x = 0, y = 0;
     private final String text;
 
+    public ButtonCreator(String text){
+        this.text = text;
+    }
+    public ButtonCreator(int y, String text){
+        this.x = Frame.getGameWidth()/2 - buttonWidth/2;
+        this.y = y;
+        this.text = text;
+        createButton();
+    }
     public ButtonCreator(int x, int y, String text){
         this.x = x;
         this.y = y;
@@ -24,8 +33,9 @@ public class ButtonCreator extends JButton {
     }
 
     public void createButton(){
-        this.setBounds(x, y, buttonWidth, buttonHeight);
         this.setText(text);
+        this.setFont(FontCreator.buttonFont);
+        this.setBounds(x, y, buttonWidth, buttonHeight);
         this.setFocusable(false);
     }
 
@@ -35,6 +45,10 @@ public class ButtonCreator extends JButton {
 
     public int getButtonHeight() {
         return buttonHeight;
+    }
+
+    public static int getButtonGap() {
+        return buttonGap;
     }
 
     @Override
