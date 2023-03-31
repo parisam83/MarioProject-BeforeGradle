@@ -5,8 +5,6 @@ import com.parim.ap2023.mario.view.objects.LabelCreator;
 import com.parim.ap2023.mario.view.objects.TextFieldCreator;
 
 import javax.swing.*;
-// screen size changes
-// check if implementing ActionListener in FirstPage solves the bug or not
 public abstract class AccountPage extends JPanel {
     private static final int textFieldLabelGap = 230;
     protected LabelCreator label;

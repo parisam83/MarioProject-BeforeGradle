@@ -8,6 +8,7 @@ public class MainFrame extends JFrame {
     private FirstPage firstPage;
     private RegisterPage registerPage;
     private LoginPage loginPage;
+    private MenuPage menuPage;
     private static final int gameWidth = 1500, gameHeight = 832;
     private static final Dimension screenSize = new Dimension(gameWidth, gameHeight);
     public MainFrame(){
@@ -20,7 +21,9 @@ public class MainFrame extends JFrame {
         this.setVisible(true);
         this.setFirstPage();
     }
-
+    public static MainFrame getInstance() {
+        return instance;
+    }
     public void setFirstPage(){
         if (firstPage == null) firstPage = new FirstPage();
         this.setContentPane(firstPage);
@@ -39,8 +42,10 @@ public class MainFrame extends JFrame {
         this.pack();
     }
 
-    public static MainFrame getInstance() {
-        return instance;
+    public void setMenuPage() {
+        menuPage = new MenuPage();
+        this.setContentPane(menuPage);
+        this.pack();
     }
 
     public static int getGameWidth() {

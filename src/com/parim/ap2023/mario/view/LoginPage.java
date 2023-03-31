@@ -13,7 +13,7 @@ public class LoginPage extends AccountPage{
     @Override
     public void validInput() {
         if (super.isDefaultValue()) return;
-        
-
+        // TODO: if username and password is correct
+        MainFrame.getInstance().setMenuPage();
     }
 }

@@ -12,6 +12,8 @@ public class RegisterPage extends AccountPage {
 
     @Override
     public void validInput() {
-
+        if (super.isDefaultValue()) return;
+        // TODO: if username is not used
+        MainFrame.getInstance().setMenuPage();
     }
 }
