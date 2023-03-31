@@ -1,4 +1,4 @@
-package com.parim.ap2023.mario.graphic;
+package com.parim.ap2023.mario.graphic.objects;
 
 import javax.swing.*;
 import java.awt.*;

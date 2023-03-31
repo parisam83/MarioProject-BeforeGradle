@@ -1,9 +1,12 @@
-package com.parim.ap2023.mario.graphic;
+package com.parim.ap2023.mario.graphic.objects;
+
+import com.parim.ap2023.mario.graphic.FontCreator;
+import com.parim.ap2023.mario.graphic.Frame;
 
 import javax.swing.*;
 
 public class ButtonCreator extends JButton {
-    private static final int buttonGap = 180;
+    private static final int buttonGap = 180, nextButtonWidth = 300, nextButtonHeight = 100;
     private int buttonWidth = 350, buttonHeight = 120;
     private int x = 0, y = 0;
     private final String text;
@@ -49,6 +52,14 @@ public class ButtonCreator extends JButton {
 
     public static int getButtonGap() {
         return buttonGap;
+    }
+
+    public static int getNextButtonWidth() {
+        return nextButtonWidth;
+    }
+
+    public static int getNextButtonHeight() {
+        return nextButtonHeight;
     }
 
     @Override
