@@ -1,8 +1,9 @@
 package com.parim.ap2023.mario;
-import com.parim.ap2023.mario.graphic.*;
+
+import com.parim.ap2023.mario.view.MainFrame;
 
 public class Main {
     public static void main(String[] args){
-        Frame frame = new Frame();
+        MainFrame mainFrame = new MainFrame();
     }
 }
